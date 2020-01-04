@@ -47,7 +47,7 @@ class Frame {
             //空间中的类名；\home\Controller\StudentController;
             //真实的类文件：./home/Controller/StudentController
 
-            $fileName = ROOT_PATH.str_replace("\\","/",$className).".class.php";
+            $fileName = ROOT_PATH.str_replace("\\",DS,$className).".class.php";
             if (file_exists($fileName)) {
                 require_once($fileName);
             }
