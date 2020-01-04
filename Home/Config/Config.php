@@ -10,7 +10,7 @@ return array(
     'db_name' => 'blog',
 
     //初始化
-    'defualt_platform' =>'Home',
+    'default_platform' =>'Home',
     'default_controller' =>'Index',
     'default_action' => 'index'
 
