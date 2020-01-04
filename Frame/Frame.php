@@ -32,7 +32,7 @@ class Frame {
         $p = $GLOBALS['config']['default_platform'];
         $c = isset($_GET['c']) ? $_GET['c'] :  $GLOBALS['config']['default_controller'];
         $a = isset($_GET['a']) ? $_GET['a'] : $GLOBALS['config']['default_action'];
-        echo $p.",".$c.",".$a;
+        
     }
 
     public static function initConst (){
