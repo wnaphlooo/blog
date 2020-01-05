@@ -39,6 +39,7 @@ class Frame {
 
     public static function initConst (){
         define('VIEW_PATH',APP_PATH.'View'.DS.CONTROLLER.DS);
+        define("FRAME_PATH",ROOT_PATH."Frame".DS);
     }
 
     public static function initAutoLoad() {

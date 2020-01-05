@@ -10,7 +10,7 @@ final class IndexController {
         $modelObj = IndexMOdel::getInstance();
         if(isset($modelObj)){
             $rows = $modelObj->queryAll();
-            var_dump($rows);
+            return $rows;
         }
         
     }

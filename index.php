@@ -1,4 +1,7 @@
 <?php
+
+use Frame\Vendor\Smarty;
+
 define("DS",DIRECTORY_SEPARATOR);
 define("ROOT_PATH",getcwd().DS);
 define("APP_PATH",ROOT_PATH."Home".DS);
