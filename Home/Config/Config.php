@@ -8,6 +8,7 @@ return array(
     'db_pass' =>'wang',
     'db_port' => '3306',
     'db_name' => 'blog',
+    'charset' =>'utf-8',
 
     //初始化
     'default_platform' =>'Home',

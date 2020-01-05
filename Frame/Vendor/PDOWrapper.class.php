@@ -17,8 +17,8 @@ final class PDOWrapper {
         $this->db_type=$GLOBALS['config']['db_type'];
         $this->db_host=$GLOBALS['config']['db_host'];
         $this->db_port=$GLOBALS['config']['db_port'];
-        $this->db_user=$GLOBALS['config']['db_pass'];
-        $this->db_pass=$GLOBALS['config']['db_type'];
+        $this->db_user=$GLOBALS['config']['db_user'];
+        $this->db_pass=$GLOBALS['config']['db_pass'];
         $this->db_name=$GLOBALS['config']['db_name'];
         $this->charset=$GLOBALS['config']['charset'];
         $this->connectDB();
@@ -41,7 +41,7 @@ final class PDOWrapper {
     }
 
     public function setErrMode(){
-        $this->pdo->setAtrribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     }
 
     //公共的执行sql的语句的方法：insert，delete，update,set
