@@ -8,9 +8,10 @@ return array(
     'db_pass' =>'wang',
     'db_port' => '3306',
     'db_name' => 'blog',
+    'charset' => 'utf8',
 
     //初始化
-    'default_platform' =>'Home',
+    'default_platform' =>'Admin',
     'default_controller' =>'Index',
     'default_action' => 'index'
 
