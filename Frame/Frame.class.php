@@ -49,6 +49,7 @@ class Frame {
             //真实的类文件：./home/Controller/StudentController
 
             $fileName = ROOT_PATH.str_replace("\\",DS,$className).".class.php";
+            print_r("$fileName"."<br>") ;
             if (file_exists($fileName)) {
                 require_once($fileName);
             }

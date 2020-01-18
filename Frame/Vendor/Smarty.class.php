@@ -4,5 +4,4 @@ require_once(FRAME_PATH."Vendor".DS."smarty-3.1.34".DS."libs".DS."Smarty.class.p
 
 final class Smarty extends \Smarty {
 
-
 }

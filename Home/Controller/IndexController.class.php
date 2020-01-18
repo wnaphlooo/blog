@@ -2,16 +2,16 @@
 //生命命名空间
 namespace Home\Controller;
 
+use Frame\Libs\BaseController;
 use Home\Model\IndexMOdel;
 
-final class IndexController {
+final class IndexController extends BaseController{
     public function index() {
         echo 'hello world';
         $modelObj = IndexMOdel::getInstance();
-        if(isset($modelObj)){
-            $rows = $modelObj->queryAll();
-            return $rows;
-        }
-        
+
+        $rows = $modelObj->queryAll();
+         $this->smarty->assign("rows",$rows);
+        $this->smarty->display("index.html");
     }
  }
